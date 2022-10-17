@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221017 17:26:35.045" rpa="false" schemaversion="3">
+<suite id="s1" name="DemoWebShop" source="C:\Users\USER\PycharmProjects\Belajar1RobotFramework\Robot\DemoWebShop.robot">
+<test id="s1-t1" name="As a guest, i want to rest saucedemo website" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demowebshop.tricentis.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221017 17:26:35.305" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<status status="PASS" starttime="20221017 17:26:35.305" endtime="20221017 17:26:42.986"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=ico-login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221017 17:26:42.986" level="INFO">Clicking button 'class=ico-login'.</msg>
+<msg timestamp="20221017 17:26:43.254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221017 17:26:43.254" level="FAIL">Button with locator 'class=ico-login' not found.</msg>
+<status status="FAIL" starttime="20221017 17:26:42.986" endtime="20221017 17:26:43.332"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=Email</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 17:26:43.332" endtime="20221017 17:26:43.332"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=Password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 17:26:43.332" endtime="20221017 17:26:43.333"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221017 17:26:43.333" endtime="20221017 17:26:43.333"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221017 17:26:43.333" endtime="20221017 17:26:43.333"/>
+</kw>
+<status status="FAIL" starttime="20221017 17:26:35.305" endtime="20221017 17:26:43.333">Button with locator 'class=ico-login' not found.</status>
+</test>
+<status status="FAIL" starttime="20221017 17:26:35.045" endtime="20221017 17:26:43.334"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="DemoWebShop">DemoWebShop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
